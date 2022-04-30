@@ -1,4 +1,5 @@
 @import "../scss/components/_config";
+@import "../scss/components/_utilities";
 
 * {
   box-sizing: border-box;
@@ -21,6 +22,52 @@ a {
 
 ul {
   list-style: none;
+}
+
+// navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid $primary-color;
+  opacity: 0.9;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    color: #fff;
+    margin: 0 0.25rem;
+    padding: 0.45rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.landing {
+  position: relative;
+  background: url("/image/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+
+  &-inner {
+    height: 100%;
+    width: 80%;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 // img {
