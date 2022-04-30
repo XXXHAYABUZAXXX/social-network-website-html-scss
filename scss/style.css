@@ -1,3 +1,20 @@
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .bg-primary {
   background: #17a2b8;
   color: #fff;
@@ -28,6 +45,61 @@
   background: #fff;
   color: #333;
   border: #ccc 1px solid;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4f4f4;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.4rem 1.3rem;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  background: #626d78;
+  color: #fff;
+}
+
+.btn.btn-primary {
+  background: #17a2b8;
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  background: #1ab6cf;
+}
+
+.btn.btn-dark {
+  background: #343a40;
+  color: #fff;
+}
+
+.btn.btn-dark:hover {
+  background: #3f474e;
+}
+
+.btn.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn.btn-success:hover {
+  background: #2dbc4e;
+}
+
+.btn.btn-danger {
+  background: #dc3545;
+  color: #333;
+}
+
+.btn.btn-danger:hover {
+  background: #e04b59;
 }
 
 .dark-overlay {
