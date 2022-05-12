@@ -26,6 +26,10 @@
   margin-bottom: 1rem;
 }
 
+.text-primary {
+  color: $primary-color;
+}
+
 // backgrounds
 .bg {
   &-primary {
@@ -103,6 +107,30 @@
     &:hover {
       background: lighten($danger-color, 5%);
     }
+  }
+}
+
+.alert {
+  background: $light-color;
+  color: #333;
+  margin: 1rem;
+  padding: 0.8rem;
+  opacity: 0.9;
+
+  &.alert-primary {
+    @include set-background($primary-color);
+  }
+
+  &.alert-dark {
+    @include set-background($dark-color);
+  }
+
+  &.alert-success {
+    @include set-background($success-color);
+  }
+
+  &.alert-danger {
+    @include set-background($danger-color);
   }
 }
 
