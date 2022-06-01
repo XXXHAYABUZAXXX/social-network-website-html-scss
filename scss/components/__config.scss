@@ -20,8 +20,9 @@ $max-width: 1100px;
   color: set-text-color($color);
 }
 
+//loop through the spaceamount
 $spaceamount: (1, 2, 3, 4, 5);
-
+//each loop
 @each $space in $spaceamount {
   // all around margin
   .m-#{$space} {

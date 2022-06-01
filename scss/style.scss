@@ -113,6 +113,31 @@ ul {
 
   .profile-about {
     grid-area: about;
+    text-align: center;
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .profile-exp,
+  .profile-edu {
+    & > div {
+      border-bottom: 1px dotted #ccc;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+
+      &:last-of-type {
+        border: none;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
   }
 
   .profile-exp {
@@ -125,6 +150,18 @@ ul {
 
   .profile-github {
     grid-area: github;
+
+    .repo {
+      display: flex;
+
+      & > div:first-of-type {
+        flex: 7 0 70%;
+      }
+
+      & > div:last-of-type {
+        flex: 3 0 30%;
+      }
+    }
   }
 }
 
