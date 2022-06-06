@@ -1,6 +1,6 @@
 .form {
   &-group {
-    margin: 1.3rem 0;
+    margin: 1.2rem 0;
   }
 
   &-text {
@@ -20,5 +20,43 @@
     font-size: 1.2rem;
     padding: 0.4rem;
     width: 100%;
+  }
+
+  input[type="submit"] {
+    font: inherit;
+  }
+
+  .social-input {
+    display: flex;
+    align-items: center;
+
+    i {
+      padding: 0.3rem;
+      width: 4rem;
+
+      &.fa-twitter {
+        color: #38a1f3;
+      }
+
+      &.fa-facebook-square {
+        color: #3b5998;
+      }
+
+      &.fa-youtube {
+        color: #c4302b;
+      }
+
+      &.fa-linkedin {
+        color: #0077b5;
+      }
+
+      &.fa-instagram {
+        color: #d9188f;
+      }
+    }
+
+    input[type="text"] {
+      padding: 0.8rem;
+    }
   }
 }
