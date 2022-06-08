@@ -563,4 +563,27 @@ ul {
       -ms-flex: 3 0 30%;
           flex: 3 0 30%;
 }
+
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post > div:first-of-type {
+  text-align: center;
+}
+
+.post img {
+  width: 150px;
+}
 /*# sourceMappingURL=style.css.map */

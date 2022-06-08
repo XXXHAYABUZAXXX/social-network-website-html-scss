@@ -165,6 +165,26 @@ ul {
   }
 }
 
+// post page
+.post-form-header {
+  padding: 0.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  align-items: center;
+
+  & > div:first-of-type {
+    text-align: center;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
 // .profile-grid {
 //   display: grid;
 //   grid-template-columns: 1fr 1fr;
