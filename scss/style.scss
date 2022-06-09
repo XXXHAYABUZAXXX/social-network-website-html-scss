@@ -38,8 +38,27 @@ ul {
   border-bottom: 1px solid $primary-color;
   opacity: 0.9;
 
+  // iphone X screen
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    // iphone X screen
+    @media (max-width: 700px) {
+      margin-bottom: 1rem;
+    }
+  }
+
   ul {
     display: flex;
+
+    .hide-sm {
+      // iphone X screen
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
   }
 
   a {
