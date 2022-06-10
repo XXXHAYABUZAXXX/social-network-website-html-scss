@@ -678,11 +678,25 @@ ul {
           align-items: center;
 }
 
+@media (max-width: 700px) {
+  .post {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .post > div:first-of-type {
   text-align: center;
 }
 
 .post img {
   width: 150px;
+}
+
+@media (max-width: 700px) {
+  .post .btn.btn-primary {
+    margin: 0;
+    padding: 0.2rem 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
