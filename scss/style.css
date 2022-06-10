@@ -308,14 +308,35 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
+.table {
+  display: block;
+}
+
+.table thead {
+  display: block;
+}
+
+.table thead tr {
+  display: block;
+}
+
+.table thead tr th {
+  display: block;
+  background: #f4f4f4;
+}
+
+.table thead tr th:not(:first-of-type) {
+  display: none;
+}
+
 .table th,
 .table td {
   padding: 1rem;
   text-align: left;
 }
 
-.table th {
-  background: #f4f4f4;
+.table td:not(:first-of-type) {
+  display: none;
 }
 
 .form-group {

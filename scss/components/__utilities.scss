@@ -216,13 +216,29 @@
 }
 
 .table {
+  display: block;
+  thead {
+    display: block;
+    tr {
+      display: block;
+      th {
+        display: block;
+        background: $light-color;
+
+        &:not(:first-of-type) {
+          display: none;
+        }
+      }
+    }
+  }
+
   th,
   td {
     padding: 1rem;
     text-align: left;
   }
 
-  th {
-    background: $light-color;
+  td:not(:first-of-type) {
+    display: none;
   }
 }
