@@ -112,15 +112,33 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 700px) {
+  .x-large {
+    font-size: 3rem;
+  }
+}
+
 .large {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
+@media (max-width: 700px) {
+  .large {
+    font-size: 2rem;
+  }
+}
+
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+  .lead {
+    font-size: 1rem;
+  }
 }
 
 .text-primary {

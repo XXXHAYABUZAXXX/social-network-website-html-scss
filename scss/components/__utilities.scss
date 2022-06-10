@@ -33,17 +33,32 @@
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+
+  // iphone X screen
+  @media (max-width: 700px) {
+    font-size: 3rem;
+  }
 }
 
 .large {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+
+  // iphone X screen
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 }
 
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+
+  // iphone X screen
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
 }
 
 .text-primary {
