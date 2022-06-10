@@ -134,6 +134,11 @@ ul {
   grid-template-areas: "profile-top profile-top" "about about" "exp edu" "github github";
   gap: 1rem;
 
+  // iphone X screen
+  @media (max-width: 700px) {
+    grid-template-areas: "profile-top" "about" "exp" "edu" "github";
+  }
+
   .profile-top {
     grid-area: profile-top;
     display: flex;
@@ -166,6 +171,11 @@ ul {
       justify-content: center;
       align-items: center;
       text-align: center;
+
+      // iphone X screen
+      @media (max-width: 700px) {
+        flex-direction: column;
+      }
     }
   }
 

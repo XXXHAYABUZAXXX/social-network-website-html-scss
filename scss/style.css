@@ -537,6 +537,12 @@ ul {
   gap: 1rem;
 }
 
+@media (max-width: 700px) {
+  .profile-grid {
+        grid-template-areas: "profile-top" "about" "exp" "edu" "github";
+  }
+}
+
 .profile-grid .profile-top {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -592,6 +598,15 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .profile-grid .profile-about .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .profile-grid .profile-exp > div,
